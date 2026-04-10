@@ -1,0 +1,185 @@
+.light {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: rgb(191, 191, 191);
+  color: rgb(255, 255, 255);
+  box-shadow: '0 2px 4px rgba(0,0,0,0.1)';
+}
+
+.dark {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+   background-color: rgb(17, 0, 93);
+  color: #000;
+  box-shadow: '0 2px 4px rgba(0,0,0,0.1)';
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.back:hover {
+  color: var(--accent);
+}
+
+.card {
+  background: var(--mid);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.sprite {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.number {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 0.25rem;
+}
+
+.types {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  color: white;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statRow {
+  display: grid;
+  grid-template-columns: 80px 40px 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: capitalize;
+}
+
+.statValue {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.barBg {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.moves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.move {
+  font-size: 0.75rem;
+  background: rgba(255,255,255,0.08);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  text-transform: capitalize;
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.status {
+  text-align: center;
+  padding: 4rem;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+  .left {
+    min-width: unset;
+  }
+}
